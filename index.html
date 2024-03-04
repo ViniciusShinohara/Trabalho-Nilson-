@@ -34,13 +34,31 @@ function recebeNumero(){
     
     }
 }
-function primo(cntxt, N1, x, y) {
-for (var x = 3);
-for (var y = N1/2);
-if (N1 % x == 0);
-return false;
+function primo(num) {
+    if (num<= 1) {
+        return false;
 
+    }
 }
+
+function verificarnumero() {
+    const numberInput = document.getElementById('numberInput');
+    const num = parseInt(numberInput.value);
+    const canvas = document.getElementById('resultCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.clearReact(0, 0, canvas.width, canvas.height);
+
+    if (primo(num)) {
+        ctx.font = '20px arial';
+        ctx.fillText(num + 'é primo', 10, 30);
+    } else{
+        ctx.font = '20px arial';
+        ctx.fillText(num + 'não é primo', 10, 30);
+    }
+}
+
+
 
 
     </script>
